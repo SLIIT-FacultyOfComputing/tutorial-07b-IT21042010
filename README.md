@@ -23,8 +23,11 @@ class Item {
       float discount; // out of 100 e.g. discount = 15
    public:
       // 1. Write the Default Constructor
+      Item();
       // 2. Write the Overloaded Constructor
+      Item(int itemCode, float unitPrice, float discount);
       // 3. Write the Destructor
+      ~Item();
 
       void setDiscount(float punitPrice);
       float getDiscount();
@@ -47,6 +50,7 @@ using namespace std;
 // 4. Implement Default Constructor Implementation
 // 5. Implement Overloaded Constructor Implementation
 // 6. Implement Destructor (display "Destructor Called")
+
 
 void Item::setDiscount(float pdiscount) {
   discount = pdiscount;
